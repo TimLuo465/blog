@@ -49,6 +49,7 @@ img:not([src]) { /* 没有src属性 */
   margin:-1px;
 }
 {% endcodeblock %}
+
 该方法中img的长宽需要比容器多2px，自己根据兼容性考虑使用**calc()函数** 回避hardcode
 
 ##### 实现二
