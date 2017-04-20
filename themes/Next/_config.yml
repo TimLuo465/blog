@@ -8,6 +8,7 @@ favicon: /favicon.ico
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
 
+language: zh-Hans
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
