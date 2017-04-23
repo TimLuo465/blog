@@ -25,7 +25,7 @@ return [**0**, **1**].</pre>
 
 题目很简单，暴力点两个for循环就能解决问题，时间复杂度O(n<sub>2</sub>)
 
-` 
+{% codeblock lang:javascript %}
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -41,11 +41,12 @@ var twoSum = function(nums, target) {
             }
         }
     }
-};`
+};
+{% endcodeblock %}
 
 仔细的想想的话, 还是能降到O(n)的
 
-`
+{% codeblock lang:javascript %}
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -63,11 +64,11 @@ var twoSum = function(nums, target) {
         arr.push(nums[i]);
     }
 };
-`
+{% endcodeblock %}
 
 虽然复杂度降下来了，但是代码还能继续优化一下，用对象的方式来取代数组的indexOf，这样性能更佳
 
-`
+{% codeblock lang:javascript %}
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -85,4 +86,4 @@ var twoSum = function(nums, target) {
         o[num] = i;
     }
 };
-`
+{% endcodeblock %}

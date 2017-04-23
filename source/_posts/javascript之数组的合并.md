@@ -12,11 +12,11 @@ date: 2016-05-16 22:03:32
 
   当然，你也可以不传数组，传数组元素，一样也是可以的。
 
-`
+{% codeblock lang:javascript %}
 var a = [], b = [1,2,3,4,5];
 console.log(a.concat(1,2,3,4,5)); // [1,2,3,4,5]
 console.log(a.concat(b, b)); // [1,2,3,4,5,1,2,3,4,5]
-`
+{% endcodeblock %}
 
 #### **主菜**
 
@@ -26,11 +26,11 @@ console.log(a.concat(b, b)); // [1,2,3,4,5,1,2,3,4,5]
 
   没错，就是<span style="font-size: 14px;">**push**<span style="font-size: 16px;">，</span><span style="font-size: 16px;">使用<span style="font-size: 14px;">**push**</span></span><span style="font-size: 16px;">可以向数组末尾添加多个元素。利用这一点我们可以完成两个数组的合并。</span></span>
 
-`
+{% codeblock lang:javascript %}
 var a = [1,2,3,4], b = [5,6,7,8];
 a.push.apply(a, b);
 console.log(a); // [1,2,3,4,5,6,7,8]
-`
+{% endcodeblock %}
 
 #### **结语**
 

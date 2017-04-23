@@ -15,17 +15,18 @@ date: 2016-06-27 23:07:56
 #### 先来看看css要做什么处理
 
 我们需要用到link标签里面的一属性: media,这个属性规定了该css文件显示在什么设备上。那么我们可以这样写：
-`
+{% codeblock lang:html %}
 <link rel="stylesheet" type="text/css" href="app.css" media="none"/>
-`
+{% endcodeblock %}
 
 #### 再来看看JS要怎么做
 
 js需要采用动态添加object元素的方式，具体如下：
-`
+{% codeblock lang:javascript %}
 var o = document.createElement("object");
 o.data = "jquery.js"
-document.body.appendChild(o);`
+document.body.appendChild(o);
+{% endcodeblock %}
 
 需要注意的是，在没有设置样式的情况下，加载的object元素会出现在页面上，需要视情况设置其width,height,display等样式。但<span style="color: #ff0000;">不能设置display:none</span>，否则将无法缓存js文件。
 

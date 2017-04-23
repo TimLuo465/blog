@@ -8,27 +8,28 @@ date: 2016-05-03 23:30:58
 
 ### 一、Global Object
 
-    Global Object代表一个全局对象，js中不允许存在独立的函数，变量和常量，它们都是Global Object 的属性和方法，包括内置的属性和方法。但是Global Object实际并不存在，它是由window充当这个角色，并且这个过程是在js首次加载时进行的。<!--more-->
+> Global Object代表一个全局对象，js中不允许存在独立的函数，变量和常量，它们都是Global Object 的属性和方法，包括内置的属性和方法。但是Global Object实际并不存在，它是由window充当这个角色，并且这个过程是在js首次加载时进行的。
 
-    在一个页面中，首次载入js代码时会创建一个全局执行环境，这个全局执行环境的作用域链实际上只有一个对象，即全局对象（window），并用this来引用全局对象。
+> 在一个页面中，首次载入js代码时会创建一个全局执行环境，这个全局执行环境的作用域链实际上只有一个对象，即全局对象（window），并用this来引用全局对象。
 
 ### 二、(0, eval)('this')
 
-    (0, eval)('this')可以用于获取当前的global object。那么为什么是(0, eval)('this')呢?
+(0, eval)('this')可以用于获取当前的global object。那么为什么是(0, eval)('this')呢?
 
 1.  先从(0, eval)表达式开始
 
- 表达式中使用了_逗号操作符，_而逗号操作符会返回表达式的最后一位，即返回的是eval值，不是引用eval。而0则可以是任意字符串或数字，不影响结果。
+表达式中使用了_逗号操作符，_而逗号操作符会返回表达式的最后一位，即返回的是eval值，不是引用eval。而0则可以是任意字符串或数字，不影响结果。
+
 2.  再说('this')
 
- 为什么要用'this'，而不是this，因为_严格模式_下，在匿名函数中的this是undefined。
+为什么要用'this'，而不是this，因为_严格模式_下，在匿名函数中的this是undefined。
 
- `
+{% codeblock lang:javascript %}
 (function(){
 'use strict'; 
   console.log(this); // undefined
 })() 
-`
+{% endcodeblock %}
 
 ### 三、eval的直接调用和间接调用
 

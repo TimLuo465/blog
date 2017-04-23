@@ -13,7 +13,7 @@ webkit中支持拥有overflow属性的区域，列表框，下拉菜单，textar
 
 ### 单刀直入
 
-` 
+{% codeblock lang:css %}
 ::-webkit-scrollbar { /* 1 滚动条整体部分*/ } 
 ::-webkit-scrollbar-button { /* 2 滚动条两端的按钮*/ } 
 ::-webkit-scrollbar-track { /* 3 滚动条的内层轨道*/ } 
@@ -21,13 +21,13 @@ webkit中支持拥有overflow属性的区域，列表框，下拉菜单，textar
 ::-webkit-scrollbar-thumb { /* 5 滚动条内滑动的方块*/ } 
 ::-webkit-scrollbar-corner { /* 6 x,y轴滚动条交汇处的边角*/ } 
 ::-webkit-resizer { /* 7 x,y轴滚动条交汇处调正大小的控件，类似于textarea调整大小的倒三角*/ } 
-`
+{% endcodeblock %}
 
-![](/wp-includes/assets/img/scrollbarparts.png "scrollbarparts")
+![](/images/scrollbarparts.png "scrollbarparts")
 
 一个简单的demo可以让你更容易上手，明白这些伪类都有着什么样的作用。
 
-`
+{% codeblock lang:css %}
 ::-webkit-scrollbar { width: 12px; }
 ::-webkit-scrollbar-track { 
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
@@ -37,7 +37,7 @@ webkit中支持拥有overflow属性的区域，列表框，下拉菜单，textar
   border-radius: 10px; 
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-`
+{% endcodeblock %}
 
 当然，webkit同样有着一些伪类可以应用在这些样式上面。
 

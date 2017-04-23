@@ -27,7 +27,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 根据题目给出的前置条件ListNode对象，可以看出
 
-`
+{% codeblock lang:javascript %}
 //[2,4,3]等价于
 new function(){ 
     this.val = 2;
@@ -39,7 +39,7 @@ new function(){
         }
     }
 }
-`
+{% endcodeblock %}
 
 有几个地方需要注意的是
 1\. 两个链表长度可能不同
@@ -48,7 +48,7 @@ new function(){
 
 利用递归解题
 
-`
+{% codeblock lang:javascript %}
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -74,11 +74,11 @@ var addTwoNumbers = function(l1, l2, carry) {
     }
     return list;
 };
-`
+{% endcodeblock %}
 
 不重新创建新的对象，使用原有的对象
 
-`
+{% codeblock lang:javascript %}
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
@@ -108,4 +108,4 @@ var addTwoNumbers = function(l1, l2) {
 
     return l1;
 };
-`
+{% endcodeblock %}

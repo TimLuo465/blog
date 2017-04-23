@@ -12,7 +12,7 @@ date: 2016-06-23 23:05:53
 
 #### **用法示例**
 
-`
+{% codeblock lang:css %}
 @font-face {
  font-family: 'Awesome Font';
  font-style: italic;
@@ -23,7 +23,7 @@ date: 2016-06-23 23:05:53
  url('/fonts/awesome-i.ttf') format('ttf'),
  url('/fonts/awesome-i.eot') format('eot');
 }
-`
+{% endcodeblock %}
 
 #### **使用细节**
 
@@ -59,7 +59,7 @@ date: 2016-06-23 23:05:53
 *   单一代码点（例如 U+416)
 *   间隔范围（例如 U+400-4ff）：指示范围的开始代码点和结束代码点
 *   通配符范围（例如 U+4??): ? 字符指示任何十六进制数字
-`
+{% codeblock lang:css %}
 @font-face {
  font-family: 'Awesome Font';
  font-style: normal;
@@ -82,7 +82,8 @@ date: 2016-06-23 23:05:53
  url('/fonts/awesome-jp.ttf') format('ttf'),
  url('/fonts/awesome-jp.eot') format('eot');
  unicode-range: U+3000-9FFF, U+ff??; /* Japanese glyphs */
-}`
+}
+{% endcodeblock %}
 
 通过使用 **<span style="color: #808000; font-size: 14px;">unicode range</span>** 子集以及为字体的每种样式变体使用单独的文件，我们可以定义一个复合字体系列，该系列下载起来更快、更有效 - 访问者将仅下载变体及变体需要的子集，而不会强制他们下载他们可能从未在网页上看到或使用过的子集。
 
@@ -92,7 +93,7 @@ date: 2016-06-23 23:05:53
 
 字体的延迟加载可能会延迟文本呈现，主要原因是由于**<span style="font-size: 14px; color: #808000;">浏览器必须 构造呈现树</span>**，这依赖于 <span style="color: #333333; font-size: 14px;">**DOM** </span>和 <span style="font-size: 14px; color: #333333;">**CSSOM** </span>树，在此之后，它将知道它将需要哪些字体资源来呈现文本。因此，会将字体请求很好地延迟到其他关键资源之后，并且在取回资源之前可能会阻止浏览器呈现文本。
 
-![font-crp](/wp-content/uploads/images/font-crp.png)
+![font-crp](/images/font-crp.png)
 
 1.  浏览器请求 <span style="font-size: 14px; color: #808000;">**<span style="color: #333333;">HTML</span> **</span>文档
 2.  浏览器开始解析 <span style="color: #333333;">**<span style="font-size: 14px;">HTML</span>** </span>响应并构造 <span style="color: #333333;">**<span style="font-size: 14px;">DOM</span>**</span>
@@ -113,7 +114,7 @@ date: 2016-06-23 23:05:53
 
 **使用字体加载 API 优化字体呈现**
 
-`
+{% codeblock lang:javascript %}
 var font = new FontFace("Awesome Font", "url(/fonts/awesome.woff2)", {
   style: 'normal', 
   unicodeRange: 'U+000-5FF', weight: '400'
@@ -131,7 +132,6 @@ document.body.style.fontFamily = "Awesome Font, serif";
 var content = document.getElementById("content");
 content.style.visibility = "visible";
 });
-
-`
+{% endcodeblock %}
 
 通过这种方式可以定义和操纵 CSS 字体外观，跟踪其下载进度，并覆盖其默认延迟加载行为。

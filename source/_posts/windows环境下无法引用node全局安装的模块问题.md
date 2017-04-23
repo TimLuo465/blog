@@ -26,4 +26,4 @@ NODE_PATH是node<span style="font-size: 14px; color: #808000;">为模块提供�
 
 &nbsp;
 
-![node path config](/wp-content/uploads/images/NODE_PATH_CONFIG.png)
+![node path config](/images/NODE_PATH_CONFIG.png)
