@@ -9,7 +9,7 @@ date: 2017-03-08 00:27:32
 
 <span style="font-size: 14px;">Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.
 
- </span><span style="font-size: 14px;">You may assume that each input would have **_exactly_** one solution, and you may not use the _same_ element twice.</span>
+ </span><span style="font-size: 14px;">You may assume that each input would have **_exactly_** one solution, and you may not use the _same_ element twice.</span> <!--more-->
 
 <span style="font-size: 14px;">**Example:**
 
