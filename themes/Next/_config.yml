@@ -512,7 +512,7 @@ vendors:
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
-  fancybox:
+  fancybox: //cdn.staticfile.org/fancybox/2.1.5/jquery.fancybox.pack.js
   fancybox_css: //cdn.staticfile.org/fancybox/3.0.47/jquery.fancybox.css
 
   # Internal version: 1.0.6
@@ -525,7 +525,7 @@ vendors:
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity:
+  velocity: //cdn.staticfile.org/velocity/1.2.1/velocity.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
