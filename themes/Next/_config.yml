@@ -342,7 +342,7 @@ changyan:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: GCvHzqvpWK8EJJIWMJerI212N4_5N474xIta1hacZwA
 
 # Google Analytics
 #google_analytics:
@@ -430,7 +430,10 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
+
+#Baidu site verification
+baidu_site_verification: BEWqeml532
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
