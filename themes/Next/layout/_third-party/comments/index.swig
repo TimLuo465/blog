@@ -1,7 +1,9 @@
-{% include 'duoshuo.swig' %}
-{% include 'disqus.swig' %}
-{% include 'hypercomments.swig' %}
-{% include 'gentie.swig' %}
-{% include 'youyan.swig' %}
-{% include 'livere.swig' %}
-{% include 'changyan.swig' %}
+{% if page.comments %}
+    {% include 'duoshuo.swig' %}
+    {% include 'disqus.swig' %}
+    {% include 'hypercomments.swig' %}
+    {% include 'gentie.swig' %}
+    {% include 'youyan.swig' %}
+    {% include 'livere.swig' %}
+    {% include 'changyan.swig' %}
+{% endif %}
