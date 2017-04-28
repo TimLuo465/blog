@@ -5,11 +5,11 @@ tags:
 date: 2016-03-31 23:48:13
 ---
 
-> 前言
+#### 前言
 
 起因是碰到这样一道题目，完成一个连加的函数，使得其可以实现如下的要求:
 
-`
+{% codeblock lang:javascript %}
 add(1)(2) //3
 add(1)(2)(3) //6
 var addTwo = add(2);
@@ -17,42 +17,40 @@ addTwo //2
 addTwo + 5 //7
 addTwo(3) //5
 addTwo(3)(5) //10`
-
+{% endcodeblock %}
 <!--more-->
 
-> 分析与思考
+#### 分析与思考
 
 根据这道题目，其实可以很快的想到这是一道闭包的题目，并且add方法中必须返回一个函数。这样才能实现连续调用。初步分析可以一个雏形:
 
-`
+{% codeblock lang:javascript %}
 function add(n){
-  var fn = function(m) {
-   return add(n + m);
-  }
-  return fn;
-
+  return function(m) {
+    return add(n + m);
+  };
 }
-`
+{% endcodeblock %}
 
 但是题目中的结果是整数，而上面的返回的是function。要怎样才能让它可以完成累加并且返回一个整数呢？
 
-经过一番折腾，终于找到了这么个神奇的办法，仰天笑三声。
+经过一番折腾，终于找到了这么个神奇的办法。
 
 办法很简单其实只需要重写fn的toString或valueOf方法就可以让fn顺利完成累加同时可以返回结果。
 
 所以只需要在fn方法下添加:
 
-`
+{% codeblock lang:javascript %}
 fn.toString = function() {
   return n;
- }`
+ }
 
-或者
+//或者
 
-`
 fn.valueOf = function() {
   return n;
- }`
+ }
+ {% endcodeblock %}
 
 好吧，既然问题解决了。那么问题又来了，toString和valueOf都可以解决这个问题，那么他们的区别是什么呢？
 
@@ -74,7 +72,7 @@ Function的原型方法中含有toString()，覆盖了Object中的toString()方�
 
 #### 三、示例
 
-`
+{% codeblock lang:javascript %}
 function A(){};
 A.toString = function() {
   return 1;
@@ -86,6 +84,6 @@ A.valueOf = function() {
 console.log(A + 2); // 4
 "A".toString() // "A"
 "A".valueOf() // "A" 这里javascript会在内部调用toString()
-`
+ {% endcodeblock %}
 
 上面的示例只是一部分，更多的需要自己去体会，通过自己demo弄清楚toString和valueOf的区别。
