@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /categories/
+Allow: /tags/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,3 +12,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: http://www.luoz.site/sitemap.xml
+Sitemap: http://www.luoz.site/baidusitemap.xml

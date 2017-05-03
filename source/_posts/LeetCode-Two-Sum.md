@@ -2,6 +2,7 @@
 title: LeetCode - Two Sum
 tags:
   - LeetCode
+  - javascript
 date: 2017-03-08 00:27:32
 ---
 

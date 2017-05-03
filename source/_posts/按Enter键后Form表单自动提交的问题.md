@@ -1,8 +1,7 @@
 ---
 title: 按Enter键后Form表单自动提交的问题
 tags:
-  - Html
-  - 技术文章
+  - html
 date: 2016-03-15 23:50:01
 ---
 

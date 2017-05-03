@@ -1,8 +1,7 @@
 ---
 title: '(0,eval)(''this'')的一些总结'
 tags:
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-05-03 23:30:58
 ---
 

@@ -2,8 +2,7 @@
 title: 自定义scrollbar的样式
 tags:
   - css3
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-05-08 15:33:04
 ---
 

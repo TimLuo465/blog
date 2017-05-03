@@ -1,8 +1,7 @@
 ---
 title: javascript之数组的合并
 tags:
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-05-16 22:03:32
 ---
 

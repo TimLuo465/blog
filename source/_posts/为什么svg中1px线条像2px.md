@@ -1,7 +1,9 @@
 ---
 title: 为什么svg中1px线条像2px
 date: 2017-05-03 09:41:57
-tags:
+tags: 
+    - svg 
+    - javascript
 ---
 #### 1px的线变2px
 

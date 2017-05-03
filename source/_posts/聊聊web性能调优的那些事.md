@@ -2,7 +2,6 @@
 title: 聊聊web性能调优的那些事
 tags:
   - performance
-  - 技术文章
 date: 2016-06-28 22:28:03
 ---
 

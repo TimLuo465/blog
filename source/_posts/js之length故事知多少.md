@@ -1,8 +1,7 @@
 ---
 title: js之length故事知多少
 tags:
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-07-13 23:59:04
 ---
 

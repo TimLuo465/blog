@@ -1,7 +1,7 @@
 ---
 title: A potentially dangerous Request.Path value was detected from the client
 tags:
-  - 技术文章
+  - asp.net
 date: 2016-04-10 19:47:31
 ---
 

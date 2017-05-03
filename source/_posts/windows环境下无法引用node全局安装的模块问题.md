@@ -2,7 +2,6 @@
 title: windows环境下无法引用node全局安装的模块问题
 tags:
   - node
-  - 技术文章
 date: 2016-05-17 21:55:12
 ---
 

@@ -2,7 +2,6 @@
 title: 前端性能优化之字体@font-face
 tags:
   - performance
-  - 技术文章
 date: 2016-06-23 23:05:53
 ---
 

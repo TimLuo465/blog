@@ -1,8 +1,7 @@
 ---
 title: js event.relatedTarget
 tags:
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-05-23 00:25:29
 ---
 

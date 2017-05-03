@@ -1,7 +1,7 @@
 ---
 title: window.opener和window.close
 tags:
-  - 技术文章
+  - javascript
 date: 2016-07-25 22:30:40
 ---
 

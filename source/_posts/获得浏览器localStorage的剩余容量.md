@@ -1,8 +1,7 @@
 ---
 title: 获得浏览器localStorage的剩余容量
 tags:
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-03-20 13:27:44
 ---
 

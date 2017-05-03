@@ -1,8 +1,7 @@
 ---
 title: Html tabindex详解
 tags:
-  - Html
-  - 技术文章
+  - html
 date: 2016-03-16 00:22:42
 ---
 

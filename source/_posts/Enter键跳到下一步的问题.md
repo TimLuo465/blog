@@ -1,7 +1,8 @@
 ---
 title: Enter键跳到下一步的问题
 tags:
-  - 技术文章
+  - javascript
+  - html
 date: 2016-03-27 23:59:40
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: jquery将滚动条滚动到指定的位置
 tags:
-  - Javascript
-  - 技术文章
+  - javascript
 date: 2016-03-18 00:29:09
 ---
 

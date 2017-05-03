@@ -2,7 +2,6 @@
 title: 前端性能优化之不执行css和js的情况下预加载文件
 tags:
   - performance
-  - 技术文章
 date: 2016-06-27 23:07:56
 ---
 
