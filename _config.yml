@@ -15,7 +15,7 @@ timezone:
 url: http://www.luoz.site/
 root: /
 permalink: :title.html
-permalink_defaults:
+permalink_defaults: :title.html
 
 # Directory
 source_dir: source
