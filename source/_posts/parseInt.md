@@ -7,20 +7,21 @@ category:
   - javascript解释器内部实现系列
 ---
 #### 概述
+---
 parseInt是一个出现频率很高的方法，主要用途就是将字符串转化为整数。更官方点：
 
 > 解析一个字符串参数，并返回一个指定基数的整数。
-<!--more-->
-#### 用法
 
-> parseInt(string, radix);
+#### 用法
+---
+> parseInt(string, radix); 
 
 第二个参数是基数，也就是进制。如二进制，十进制等等，其取值范围是2到36。
 
-parseInt返回整数否则NaN。
+parseInt返回整数否则NaN。 <!--more-->
 
 #### 庖丁解牛parseInt(str, radix)
-
+---
 来看看javascript的解释器做了哪些事情
 
 ##### 第一步：将str转化为字符串， ToString(str)
@@ -96,7 +97,7 @@ return sign x number;
 {% endcodeblock %}
 
 #### 需要注意的点
-
+---
 1. 可以使用isNaN来判断parseInt的结果是否为NaN
 2. intValue.toString(radix)可以将整数转化为对应进制下的字符串
 
