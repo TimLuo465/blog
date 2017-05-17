@@ -8,7 +8,7 @@ subtitle:  Tim Luo
 description: The Stories of ME
 author: Tim Luo
 language: zh-Hans
-timezone:
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
