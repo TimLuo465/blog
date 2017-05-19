@@ -5,11 +5,11 @@ tags:
 date: 2016-06-23 23:05:53
 ---
 
-#### **@font-face**
+#### @font-face
 
 使用**<span style="color: #808000; font-size: 14px;">@font-face</span>**，可以定义某个特定字体资源的位置，其样式特征用于网页。<!--more-->
 
-#### **用法示例**
+#### 用法示例
 
 {% codeblock lang:css %}
 @font-face {
@@ -24,7 +24,7 @@ date: 2016-06-23 23:05:53
 }
 {% endcodeblock %}
 
-#### **使用细节**
+#### 使用细节
 
 **<span style="color: #000000;">①.</span>** 使用**<span style="color: #808000; font-size: 14px;">local()</span>**指令，我们可以引用、加载和使用本地安装的字体
 
@@ -34,7 +34,7 @@ date: 2016-06-23 23:05:53
 
 **<span style="color: #000000;">④.</span>** 减少风格字体变体的数量以改进网页和文本呈现性能
 
-#### **字体格式**
+#### 字体格式
 
 现在网络上使用的字体容器格式有四种：<span style="font-size: 14px; color: #333333;">**EOT**</span>、<span style="font-size: 14px; color: #333333;">**TTF**</span>、<span style="font-size: 14px; color: #333333;">**WOFF **</span>和 <span style="font-size: 14px; color: #333333;">**WOFF2**</span>。遗憾的是，无论选择的范围有多宽，都不会有在所有旧浏览器和新浏览器上都可以使用的单一通用格式：<span style="font-size: 14px; color: #333333;">**EOT **</span>仅 <span style="font-size: 14px;">**<span style="color: #808000;">IE</span>**</span> 支持，<span style="font-size: 14px; color: #333333;">**TTF **</span>具有 部分 **<span style="color: #808000;">IE</span> **支持，<span style="font-size: 14px; color: #333333;">**WOFF **</span>的支持最广泛，但 它在许多较旧的浏览器中不可用，<span style="color: #333333;">**<span style="font-size: 14px;">WOFF 2.0</span>**</span> 支持 对于许多浏览器来说还未实现。
 
@@ -45,13 +45,13 @@ date: 2016-06-23 23:05:53
 
 还有一种<span style="font-size: 14px; color: #333333;">**SVG**</span>字体，因为兼容性和用途有限，可以忽略不提。
 
-#### **压缩字体大小**
+#### 压缩字体大小
 
 一般情况下，可以在服务器端配置GZIP压缩，可以有效的减小字体文件大小。
 
 可以考虑使用 <span style="font-size: 14px;">**<span style="color: #333333;">Zopfli</span> **</span>压缩 处理 **<span style="font-size: 14px; color: #333333;">EOT</span>**、**<span style="font-size: 14px; color: #333333;">TTF </span>**和 **<span style="font-size: 14px; color: #333333;">WOFF </span>**格式。**<span style="color: #333333; font-size: 14px;">Zopfli </span>**是一个 **<span style="font-size: 14px; color: #333333;">zlib </span>**兼容压缩工具，该工具通过 **<span style="color: #333333; font-size: 14px;">gzip </span>**提供 **<span style="color: #333333; font-size: 14px;">~5%</span>** 的文件大小缩减。
 
-#### **使用Unicode-range 子集内嵌**
+#### 使用Unicode-range 子集内嵌
 
 使用 **<span style="color: #808000; font-size: 14px;">unicode-range</span>** 描述符，我们可以指定一个范围值的逗号分隔列表，其中每个可以采用以下三种不同的形式之一：
 
@@ -88,7 +88,7 @@ date: 2016-06-23 23:05:53
 
 在浏览器不支持<span style="font-size: 14px;">**<span style="color: #808000;">unicode range</span>**</span>的情况下，浏览器会下载所有字体。
 
-#### **优化加载和呈现**
+#### 优化加载和呈现
 
 字体的延迟加载可能会延迟文本呈现，主要原因是由于**<span style="font-size: 14px; color: #808000;">浏览器必须 构造呈现树</span>**，这依赖于 <span style="color: #333333; font-size: 14px;">**DOM** </span>和 <span style="font-size: 14px; color: #333333;">**CSSOM** </span>树，在此之后，它将知道它将需要哪些字体资源来呈现文本。因此，会将字体请求很好地延迟到其他关键资源之后，并且在取回资源之前可能会阻止浏览器呈现文本。
 
