@@ -6,13 +6,12 @@ tags:
 ---
 #### 概述
 ---
-相信在这之前你一定试过**border: 0|none;** **outline: none;** 等等这些样式，但然并卵，归根结底还是浏览器的行为。那么到底该如何解决呢？
+相信在这之前你一定试过**border: 0|none;** **outline: none;** 等等这些样式，但然并卵，归根结底还是浏览器的行为。那么到底该如何解决呢？ 
 <!-- more -->
 #### src为空或不存在
 ---
 
 这种情况无疑是最好处理的，直接利用选择器对元素进行隐藏就可以了
-
 
 {% codeblock lang:html %}
 <img src="" width="100" height="100">
@@ -50,6 +49,7 @@ img:not([src]) { /* 没有src属性 */
   margin:-1px;
 }
 {% endcodeblock %}
+
 该方法中img的长宽需要比容器多2px，自己根据兼容性考虑使用**calc()函数** 回避hardcode
 
 ##### 实现二

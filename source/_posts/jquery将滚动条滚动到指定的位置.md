@@ -9,14 +9,14 @@ date: 2016-03-18 00:29:09
 
 > <span style="color: #333333;">**scrollTop()**</span>
 
-#### **定义和用法**
+#### 定义和用法
 
 jquery中scrollTop()即可以用于设置匹配元素的滚动条的垂直偏移，也可以用于读取匹配元素集合的第一个元素的滚动条的垂直偏移。
 
 *   <span style="color: #333300;">$(ele).scrollTop(value)</span>  value为设置的垂直偏移量。
 *   <span style="color: #333300;">$(ele).scrollTop()</span> 可以得到垂直偏移量。
 
-#### **深入了解**
+#### 深入了解
 
 关于scrollTop的工作原理，主要有两点:
 
@@ -40,9 +40,9 @@ if( value === undefined &amp;&amp; win) {    
     2.  如果不是则遍历匹配元素集合，并设置每个元素的滚动偏移值。
 > <span style="color: #333333; font-weight: bold;">offset()</span>
 
-#### **定义和用法**
+#### 定义和用法
 
-#### **<span style="color: #808080;">    offset()</span>**
+#### <span style="color: #808080;">    offset()</span>
 
       返回匹配元素集合中的第一个元素文档坐标。
 
@@ -50,9 +50,7 @@ if( value === undefined &amp;&amp; win) {    
 
       设置每个匹配元素的文档坐标，参数options含有属性top或left对象，属性值是数值。例如$(ele).offset().top或者$(ele).offset({top: value})
 
-#### **深入了解
-
- **
+#### 深入了解
 
     关于读取元素文档坐标，jquery会优先调用getBoundingClientRect()，说到getBoundingClientRect，有必要知道点。
 

@@ -5,7 +5,7 @@ tags:
 date: 2016-05-23 00:25:29
 ---
 
-### **relatedTarget**
+#### relatedTarget
 
 碰巧有用到这个属性，这里就总结一下吧。<!--more-->
 
