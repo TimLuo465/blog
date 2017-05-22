@@ -90,7 +90,7 @@ img:after {
   height: 100%;
   top: 0;
   left: 0;
-  background: #fff; // 背景色遮盖
+  background: #fff; /* 背景色遮盖 */
 }
 </style>
 <img src="error-path" width="100" height="100" alt="no image" >
