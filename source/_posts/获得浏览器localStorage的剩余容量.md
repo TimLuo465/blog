@@ -5,7 +5,7 @@ tags:
 date: 2016-03-20 13:27:44
 ---
 
-### 一、如何获取localStorage的剩余容量
+#### 一、如何获取localStorage的剩余容量
 
 在H5大行其道的今天，localStorage(本地存储)对每一个前断攻城师来说都不太陌生。同时localStorage也给我们带来了极大的便利，不用于cookies的小家子气，localStorage的存储量还是很客观的。<!--more-->
 
@@ -27,7 +27,7 @@ date: 2016-03-20 13:27:44
  })()
   {% endcodeblock %}
 
-### 二、如何获取localStorage最大容量
+#### 二、如何获取localStorage最大容量
 
 通过上面的分析，其实思路基本是一样的，都是通过字符长度来判断。废话不多说，贴码:
 {% codeblock lang:javascript %}
