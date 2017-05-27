@@ -2,6 +2,7 @@
 title: github没有记录contributions之迷
 date: 2017-05-23 23:59:46
 tags:
+  - github
 ---
 #### 起因
 ---
