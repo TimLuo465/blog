@@ -17,8 +17,10 @@ asp.net默认的拦截机制，其目的是为了确保URL传输的安全。
 
 **1. requestPathInvalidCharacters**
 
-` <system.web>
+{% codeblock lang:xml %}
+ <system.web>
     <httpRuntime requestPathInvalidCharacters="" />
- <system.web>`
+ <system.web>
+ {% endcodeblock %}
 
 默认都不拦截(&lt;,&gt;,*,%,&amp;,:,/七种特殊字符)，如果需要拦截直接写在""内，以逗号隔开（&amp;lt;,&amp;gt;,*,%,:,&amp;amp;,/）。

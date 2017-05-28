@@ -41,11 +41,11 @@ $(element).trigger("touchstart");
 
 给select添加size是可以做到展开的效果，但是需要考虑长宽等等因素。其实让select展开来，还是有别的方法的。
 
-`
+{% codeblock lang:javascript %}
 var e = document.createEvent("MouseEvents");
 e.initMouseEvent("mousedown", true, true, window); 
 element.dispatchEvent(e);
-`
+{% endcodeblock %}
 
 上面方法只适合chrome浏览器和android, ipad。iphone手机上再次被<span style="color: #ff0000;">KO</span>!
 
