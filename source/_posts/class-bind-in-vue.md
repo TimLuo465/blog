@@ -48,7 +48,7 @@ div {
     border: 1px solid red;
 }
 </style>
- {% endcodeblock %}
+{% endcodeblock %}
 咋一看这样子好像没毛病，结果确实点击div后active切换了，border变回了黑色，说好的红色去哪了？[点这里看具体的效果](https://codepen.io/TimLuo465/pen/GmaOYq?editors=0010)。
 
 接下来，再看一个常见的场景，比如我们需要使用某个滚动条插件来对滚动条进行美化，在某个节点上进行了初始化，但恰巧我们又在该节点上使用了 **:class** ，事实告诉你，你可能用了一个假插件。[来看看究竟会发生什么](http://note.youdao.com/)。
@@ -59,7 +59,7 @@ div {
 
 以vue2.3.3为例，在源码中找到updateClass这个方法，如下图所示
 
-![](/images/updateClass.png)
+![updateClass](/images/updateClass.png)
 
 这里就是update class的主要方法。
 
@@ -67,7 +67,7 @@ div {
 
 {% codeblock lang:html %}
 :class={active: isActive, highlight: isHightLight}
- {% endcodeblock %}
+{% endcodeblock %}
 isActive, isHightLight为ture,对应的cls就是"active hightlight"。反之则为""。
 
 **5589行**则是将节点的class属性进行重新赋值，更新。这也就是插件动态添加的class消失的原因了。可以自行debug一下，更清晰一些。
