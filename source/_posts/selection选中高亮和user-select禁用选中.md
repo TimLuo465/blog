@@ -2,7 +2,7 @@
 title: '::selection选中高亮和user-select禁用选中'
 date: 2017-04-27 20:35:23
 tags:
-  - cSS3
+  - css3
 ---
 
 ### ::selection

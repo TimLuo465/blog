@@ -2,8 +2,8 @@
 title: vue之可怕的class绑定
 date: 2017-05-28 20:02:19
 tags:
-  -javascript
-  -vue
+  - javascript
+  - vue
 ---
 #### class绑定
 在vue中可以利用v-bind:class(即 **:class**)来动态切换class，具体用法就不多赘述了，[官方文档](https://vuefe.cn/v2/guide/class-and-style.html)很齐全。<!-- more -->
