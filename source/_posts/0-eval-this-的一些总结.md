@@ -5,13 +5,13 @@ tags:
 date: 2016-05-03 23:30:58
 ---
 
-#### 一、Global Object
+#### Global Object
 
 > Global Object代表一个全局对象，js中不允许存在独立的函数，变量和常量，它们都是Global Object 的属性和方法，包括内置的属性和方法。但是Global Object实际并不存在，它是由window充当这个角色，并且这个过程是在js首次加载时进行的。
 
 > 在一个页面中，首次载入js代码时会创建一个全局执行环境，这个全局执行环境的作用域链实际上只有一个对象，即全局对象（window），并用this来引用全局对象。 <!--more-->
 
-#### 二、(0, eval)('this')
+#### (0, eval)('this')
 
 (0, eval)('this')可以用于获取当前的global object。那么为什么是(0, eval)('this')呢?
 
@@ -30,7 +30,7 @@ date: 2016-05-03 23:30:58
 })() 
 {% endcodeblock %}
 
-#### 三、eval的直接调用和间接调用
+#### eval的直接调用和间接调用
 
 直接调用的概念:
 
@@ -44,7 +44,7 @@ date: 2016-05-03 23:30:58
 
     相反的，不是直接调用就是间接调用。
 
-#### 四、window.eval和window.execScript
+#### window.eval和window.execScript
 
     IE浏览器中有一个window.execScript功能。它的定义是"在所提供的语言中执行指定的脚本"，同时在全局范围内允许执行Javascript代码。
 

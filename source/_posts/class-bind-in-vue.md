@@ -6,10 +6,11 @@ tags:
   - vue
 ---
 #### class绑定
+---
 在vue中可以利用v-bind:class(即 **:class**)来动态切换class，具体用法就不多赘述了，[官方文档](https://vuefe.cn/v2/guide/class-and-style.html)很齐全。<!-- more -->
 
 #### 可怕之处
-
+---
 当你用错误的方式打开 **:class** 之后，你会怀疑你的人生。废话不多说，看看下面的例子
 
 {% codeblock lang:html %}
@@ -56,7 +57,7 @@ div {
 看过这两个例子，机智的你会发现动态添加在节点的类不见了，Why?
 
 #### :class都做了什么
-
+---
 以vue2.3.3为例，在源码中找到updateClass这个方法，如下图所示
 
 ![updateClass](/images/updateClass.png)
@@ -73,7 +74,7 @@ isActive, isHightLight为ture,对应的cls就是"active hightlight"。反之则�
 **5589行**则是将节点的class属性进行重新赋值，更新。这也就是插件动态添加的class消失的原因了。可以自行debug一下，更清晰一些。
 
 #### 总结
-
+---
 原谅我只是个标题党，可怕的不是:class而是用错:class的人。谨以此提醒一下，不要在节点上即使用了:class又初始化了需要添加特定class的插件。不然死都不知道死的，你懂的。
 
 
