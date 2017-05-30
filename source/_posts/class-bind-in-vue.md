@@ -11,7 +11,7 @@ tags:
 
 #### 可怕之处
 ---
-当你用错误的方式打开 **:class** 之后，你会怀疑你的人生。废话不多说，看看下面的例子
+当你用错误的方式打开 **:class** 之后，会遇到一些让你困惑不已的问题。看看下面的例子
 
 {% codeblock lang:html %}
 <template>
@@ -50,11 +50,11 @@ div {
 }
 </style>
 {% endcodeblock %}
-咋一看这样子好像没毛病，结果确实点击div后active切换了，border变回了黑色，说好的红色去哪了？[点这里看具体的效果](https://codepen.io/TimLuo465/pen/GmaOYq?editors=0010)。
+点击div后active切换了，没毛病。但是border却变回了黑色，border-red的红呢？[点这里看具体的效果](https://codepen.io/TimLuo465/pen/GmaOYq?editors=0010)。
 
-接下来，再看一个常见的场景，比如我们需要使用某个滚动条插件来对滚动条进行美化，在某个节点上进行了初始化，但恰巧我们又在该节点上使用了 **:class** ，事实告诉你，你可能用了一个假插件。[来看看究竟会发生什么](http://note.youdao.com/)。
+接下来，再看一个常见的场景，比如我们需要使用某个滚动条插件来对滚动条进行美化，在某个节点上进行了初始化，但恰巧我们又在该节点上使用了 **:class** ，事实告诉你，你可能用了一个假插件。[来看看究竟会发生什么](https://codepen.io/TimLuo465/pen/BReJBd)。
 
-看过这两个例子，机智的你会发现动态添加在节点的类不见了，Why?
+看过这两个例子，会发现动态添加在节点的类不见了，Why?
 
 #### :class都做了什么
 ---
@@ -75,7 +75,4 @@ isActive, isHightLight为ture,对应的cls就是"active hightlight"。反之则�
 
 #### 总结
 ---
-原谅我只是个标题党，可怕的不是:class而是用错:class的人。谨以此提醒一下，不要在节点上即使用了:class又初始化了需要添加特定class的插件。不然死都不知道死的，你懂的。
-
-
-
+事实告诉我们尽量不要在节点上即使用:class又初始化了需要添加特定class的插件。不然天知道会发生什么。
