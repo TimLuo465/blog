@@ -4,7 +4,7 @@ date: 2017-05-31 19:30:42
 tags:
   - javascript
 ---
-### 先捕获还是先冒泡
+#### 先捕获还是先冒泡
 ---
 
 有这么一个问题：如果为一个节点添加两个事件，一个用捕获，一个用冒泡，哪个先执行，执行几次？
@@ -39,8 +39,10 @@ tags:
 
 看明白了上面的案例，那么问题的答案其实已经呼之欲出了。
 
-### addEventListener(type, callback [, options])
+#### addEventListener: 捕获or冒泡
 ---
+> addEventListener(type, callback [, options])
+
 前两个参数就不多说了，说说第三个参数options吧。
 
 **options**为可选参数，可以是boolean也可以是object
@@ -55,11 +57,11 @@ tags:
     once: false | true 
 }
 {% endcodeblock %}
-#### capture
+##### capture
 
 capture为true时，代表着捕获阶段触发handler，其他阶段不触发。这个参数决定着事件是冒泡流还是捕获流，实际情况用冒泡的情况较多，默认为false。
 
-#### passive
+##### passive
 
  当passive为true时，代表着浏览器将不会调用handler中的**preventDefault**方法，目的是为了提高浏览器的性能。
 
@@ -73,10 +75,11 @@ passive的作用便是告诉浏览器，这些事件监听器内部不会调用p
 
 [点这里了解更多关于passive](http://blog.csdn.net/dj0379/article/details/52883315)
 
-#### once
+##### once
 
 once为true时，该事件的handler只会被调用一次，结束后将移除对该事件的监听。
 
-### removeEventListener(type, callback [,options])
+#### removeEventListener
+> removeEventListener(type, callback [,options])
 
 事件是否能够移除成功，主要取决与type,callback,capture这三个参数，解释器会在节点的事件监听器列表中找到一个type为type, callback为callback, capture为capture的监听器，将其removed属性设置为true，即移除这个事件监听。
