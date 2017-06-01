@@ -11,6 +11,7 @@
 ### 归档
 
 #### 2017
+- 5-31 [javascript事件流漫谈](http://www.luoz.site/javascript-event-detail.html)
 - 5-28 [vue之可怕的class绑定](http://www.luoz.site/class-bind-in-vue.html)
 - 5-27 [React之如何阻止事件冒泡](http://www.luoz.site/how-to-stop-propagation-in-react-event.html)
 - 5-23 [github没有记录contributions之迷](http://www.luoz.site/why-are-my-contributions-not-showing-up-on-my-profile.html)
