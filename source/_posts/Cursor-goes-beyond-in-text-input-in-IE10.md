@@ -7,7 +7,7 @@ tags:
 ---
 
 #### 问题概要
-    ie10中, 动态给input框赋值(值的长度超过input宽度)时, input的光标会focus在input的最边缘
+ie10中, 动态给input框赋值(值的长度超过input宽度)时, input的光标会focus在input的最边缘
 
 ![cursor-beyond-in-input](/images/cursor-beyond-in-input.png)
 
