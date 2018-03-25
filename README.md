@@ -10,6 +10,10 @@
 
 ### 归档
 
+#### 2018
+
+- 3-25 [Navigator.sendBeacon预热](http://www.luoz.site/Navigator-sendBeacon预热.html)
+
 #### 2017
 - 8-01 [IE10+中input框光标越界问题](http://www.luoz.site/Cursor-goes-beyond-in-text-input-in-IE10.html)
 - 6-11 [如何隐藏select框的下拉箭头](http://www.luoz.site/Select-arrow-no-showing.html)
