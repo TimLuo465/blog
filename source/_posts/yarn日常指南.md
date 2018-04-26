@@ -16,7 +16,7 @@ tags:
     ```
 - 执行``choco install yarn`` 安装 ``yarn``
 - [Chocolatey官方下载地址](https://chocolatey.org/install)
-
+<!--more-->
 ##### 2. 利用Scoop安装
 
 - ``Powershell 3+`` 安装``Scoop``, 执行以下命令:
